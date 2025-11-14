@@ -1,11 +1,12 @@
 <script setup>
 import './main.css'
 import FooterComponent from "@/components/pagecomponent/FooterComponent.vue";
+import HeaderComponent from "@/components/pagecomponent/HeaderComponent.vue";
 </script>
 
 <template>
   <header>
-    header
+    <HeaderComponent />
   </header>
   <main>
     main
@@ -19,8 +20,6 @@ import FooterComponent from "@/components/pagecomponent/FooterComponent.vue";
 body {
   margin: 0;
   header{
-    display: flex;
-    flex-direction: column;
     height: 100vh;
   }
   main {

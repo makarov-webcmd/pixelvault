@@ -10,39 +10,39 @@
     </div>
     <div class="footer-nav">
       <div class="footer-item">
-        <a>Store</a>
+        <a href="#">Store</a>
       </div>
       <div class="footer-item">
-        <a>News</a>
+        <a href="#">News</a>
       </div>
       <div class="footer-item">
-        <a>Cases</a>
+        <a href="#">Cases</a>
       </div>
       <div class="footer-item">
-        <a>Contacts</a>
+        <a href="#">Contacts</a>
       </div>
       <div class="footer-item">
-        <a>Discord</a>
+        <a href="#">Discord</a>
       </div>
     </div>
     <div class="footer-links">
-      <div class="link-twitter">
+      <a href="#" class="link-twitter">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#00BFFF" viewBox="0 0 24 24">
           <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 11 5.5a12.8 12.8 0 0 1-9.3-4.7s-4 9 5 13a13.38 13.38 0 0 1-8 2c9 5.5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
         </svg>
-      </div>
-      <div class="link-steam">
+      </a>
+      <a href="#" class="link-steam">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="#00FFC6" stroke-width="2">
           <rect x="2" y="4" width="20" height="16" rx="2"/>
           <path d="M22 4l-10 7L2 4"/>
         </svg>
-      </div>
-      <div class="link-discord">
+      </a>
+      <a href="#" class="link-discord">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="#7B8A96" stroke-width="2">
           <rect x="3" y="5" width="14" height="14" rx="2"/>
           <path d="M7 9h6M7 13h6"/>
         </svg>
-      </div>
+      </a>
     </div>
   </div>
 </div>
@@ -84,6 +84,7 @@
     font-size: var(--text-md);
 
     a {
+      text-decoration: none;
       color: var(--text-secondary);
       transition: 0.2s ease;
 
@@ -99,7 +100,7 @@
     gap: 0.8rem;
     align-items: center;
 
-    div {
+    a {
       width: 32px;
       height: 32px;
       display: flex;
@@ -130,10 +131,10 @@
 
 /* Стандартные ноутбуки */
 @media (max-width: 1200px) {
-  footer-content {
+  .footer-content {
     padding: 1.4rem 1rem;
   }
-  footer-nav {
+  .footer-nav {
     gap: 1rem;
   }
 }
