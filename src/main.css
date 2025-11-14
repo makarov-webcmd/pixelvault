@@ -1,0 +1,102 @@
+:root {
+    /* === 🌌 Основные фоны === */
+    --bg-main: #0A0F12;             /* Главный фон сайта */
+    --bg-secondary: #0D1117;        /* Вторичный фон (блоки, панели) */
+    --bg-card: #111920;             /* Карточки игр, новости, профили */
+    --bg-hover: #1A232C;            /* Фон при наведении на карточку */
+    --bg-input: #121A21;            /* Фон поисковых инпутов */
+    --bg-footer: #0B1015;           /* Футер */
+    --bg-navbar: #0D1117;           /* Навбар */
+    --bg-popup: #141B23;            /* Выпадающие меню, модалки */
+
+    /* === 💡 Акценты === */
+    --accent-neon: #00FFC6;         /* Основной неоновый акцент */
+    --accent-neon-hover: #00E0B8;   /* При наведении */
+    --accent-purple: #5A5AFF;       /* Вторичный неон (фиолетовый) */
+    --accent-gold: #FFD36B;         /* Валюта / XP */
+    --accent-blue: #53E2D1;         /* Доп. свечение / цены */
+    --accent-glow: rgba(0, 255, 198, 0.2); /* Подсветка элементов */
+
+    /* === 🧭 Навигация === */
+    --nav-text: #C8D1D9;            /* Текст пунктов */
+    --nav-text-hover: #00E0B8;      /* При наведении */
+    --nav-text-active: #00FFC6;     /* Активный пункт */
+    --nav-icon: #7A8B94;            /* Иконки в навбаре */
+    --nav-border: #1C242C;          /* Границы элементов */
+    --nav-avatar-bg: #1B232C;       /* Фон аватара */
+
+    /* === 🔍 Поиск === */
+    --input-bg: #121A21;
+    --input-border: #1F2A33;
+    --input-placeholder: #6E7A84;
+    --input-text: #FFFFFF;
+    --input-icon: #7B8A96;
+
+    /* === 🧩 Карточки игр === */
+    --card-bg: #111920;
+    --card-border: #141C25;
+    --card-shadow: rgba(0, 0, 0, 0.45);
+    --card-hover-shadow: rgba(0, 255, 198, 0.2);
+    --card-title: #FFFFFF;
+    --card-desc: #8A98A6;
+    --card-price: #53E2D1;
+    --card-coin-icon: #00E6B0;
+    --card-badge-new: #00FFC6;
+    --card-badge-text: #0D1117;
+
+    /* === 🧠 Разделы и тексты === */
+    --section-bg: #0F151B;
+    --section-title: #FFFFFF;
+    --section-subtitle: #C6D0DB;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A3B0BD;
+    --text-muted: #7F8C96;
+    --text-invert: #0D1117;
+
+    /* === ⚙️ Кнопки === */
+    --btn-bg: #00FFC6;
+    --btn-text: #0E151B;
+    --btn-hover-bg: #00E0B8;
+    --btn-disabled-bg: #1B232C;
+    --btn-disabled-text: #6C7783;
+
+    /* === 🏆 Достижения === */
+    --achievement-icon: #00FFC6;
+    --achievement-text: #B9C6D2;
+    --achievement-glow: rgba(0, 255, 198, 0.4);
+
+    /* === 📰 Новости === */
+    --news-bg: #131C24;
+    --news-title: #FFFFFF;
+    --news-text: #A3B0BD;
+    --news-hover-bg: #1A232C;
+
+    /* === ⚫ Футер === */
+    --footer-border: #00FFC6;
+    --footer-text: #9AA5B1;
+    --footer-heading: #FFFFFF;
+    --footer-icon: #00FFC6;
+    --footer-icon-hover: #00E0B8;
+    --footer-copy: #6C7783;
+
+    /* === 🌈 Эффекты === */
+    --shadow-strong: rgba(0, 0, 0, 0.6);
+    --shadow-soft: rgba(0, 0, 0, 0.35);
+    --glow-accent: 0 0 8px rgba(0, 255, 198, 0.5);
+
+    /* === 🖋️ Шрифты === */
+    --font-main: 'Inter', 'Poppins', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* === 🔠 Размеры текста === */
+    --text-xs: 12px;
+    --text-sm: 13px;
+    --text-base: 14px;
+    --text-md: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-xxl: 24px;
+}
