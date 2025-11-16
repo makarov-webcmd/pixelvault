@@ -53,7 +53,7 @@
   width: 100%;
   background: var(--bg-footer);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
   backdrop-filter: blur(6px);
 }
 
@@ -64,6 +64,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 0 0 20px 20px;
   text-transform: uppercase;
   color: var(--footer-text);
 

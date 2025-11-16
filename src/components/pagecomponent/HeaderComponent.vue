@@ -12,7 +12,9 @@
             <circle cx="12" cy="12" r="2" fill="#00FFC6"/>
           </svg>
         </div>
-        <div class="pl-logo-text">PixelVault</div>
+        <div class="pl-logo-text">
+          <RouterLink to="/home"> PixelVault </RouterLink>
+        </div>
       </div>
       <div class="pl-header-items">
         <div class="pl-search">
@@ -25,17 +27,18 @@
       </div>
     </div>
     <div class="pl-down">
-      <a href="#" class="pl-nav-item store">Store</a>
-      <a href="#" class="pl-nav-item community">Community</a>
-      <a href="#" class="pl-nav-item news">News</a>
-      <a href="#" class="pl-nav-item cases">Cases</a>
-      <a href="#" class="pl-nav-item support">Support</a>
+      <RouterLink to="/store" class="pl-nav-item store" active-class="active">Store</RouterLink>
+      <RouterLink to="/community" class="pl-nav-item community" active-class="active">Community</RouterLink>
+      <RouterLink to="/news" class="pl-nav-item news" active-class="active">News</RouterLink>
+      <RouterLink to="/cases" class="pl-nav-item cases" active-class="active">Cases</RouterLink>
+      <RouterLink to="/support" class="pl-nav-item support" active-class="active">Support</RouterLink>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .header-content {
+  border-radius: 20px 20px 0 0;
   text-transform: uppercase;
   background: var(--bg-navbar);
   color: var(--nav-text);
@@ -54,6 +57,14 @@
       align-items: center;
       gap: 0.8rem;
       cursor: pointer;
+      a {
+        text-decoration: none;
+        color: var(--input-text);
+        &:hover {
+          transition: 7ms ease-in-out;
+          text-shadow: 0 0 6px #00FFC6;
+      }
+      }
     }
 
     .pl-header-items {
@@ -130,6 +141,14 @@
     padding: 1rem;
     gap: 0.8rem;
 
+    .pl-nav-item.active {
+      color: var(--nav-text-hover);
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+
     a {
       position: relative;
       color: var(--nav-text);
@@ -152,7 +171,7 @@
       }
 
       &:hover::after {
-        transform: scaleX(1);
+        transform: scaleX(1) !important;
       }
 
       &:hover {
@@ -163,7 +182,12 @@
 
       &:active {
         color: var(--nav-text-active);
+        text-shadow: 0 0 6px #00FFC6;
         transition: 0.2s ease;
+
+        &:after {
+          transform: scaleX(1);
+        }
       }
     }
   }
